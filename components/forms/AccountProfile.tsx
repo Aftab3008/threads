@@ -33,7 +33,6 @@ interface Props {
         name:string,
         bio:string,
         image:string,
-        email:string
     },
     btnTitle:string
 }

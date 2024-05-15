@@ -10,11 +10,12 @@ export const metadata = {
 const inter=Inter({subsets:["latin"]});
 export default function RootLayout({ children}:{children: React.ReactNode}) {
   return (
-
-        <html lang="en">
-            <body className={`${inter.className} bg-dark-1`}>
+    <html lang="en">
+        <body className={`${inter.className} bg-dark-1`}>
+            <div className='w-full flex justify-center items-center min-h-screen'>
                 {children}
-            </body>
-        </html>
+            </div>
+        </body>
+    </html>
   )
 }
