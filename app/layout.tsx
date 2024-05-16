@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
-import { sign } from "crypto";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export const metadata: Metadata = {
   title: "Threads",
@@ -29,7 +29,10 @@ export default function RootLayout({
   return (
     <ClerkProvider localization={localization}>
       <html lang="en">
-        <body>{children}</body>
+        <body>
+          <SpeedInsights />
+          {children}
+        </body>
       </html>
     </ClerkProvider>
   );
