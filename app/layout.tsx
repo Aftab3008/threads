@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
-import { ClerkProvider } from '@clerk/nextjs'
+import { ClerkProvider } from "@clerk/nextjs";
 import { sign } from "crypto";
-
-
 
 export const metadata: Metadata = {
   title: "Threads",
@@ -12,17 +10,16 @@ export const metadata: Metadata = {
 const localization = {
   signUp: {
     start: {
-      subtitle: 'to access Threads',
+      subtitle: "to access Threads",
     },
   },
   signIn: {
-    start:{
-      title:"Sign in to access Threads",
-      subtitle:"Welcome back! Sign in to Threads account",
-    }
-  }
+    start: {
+      title: "Sign in to access Threads",
+      subtitle: "Welcome back! Sign in to Threads account",
+    },
+  },
 };
-
 
 export default function RootLayout({
   children,
