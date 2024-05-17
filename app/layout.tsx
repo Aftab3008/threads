@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { ClerkProvider } from "@clerk/nextjs";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Threads",
@@ -32,6 +33,7 @@ export default function RootLayout({
         <body>
           <SpeedInsights />
           {children}
+          <Analytics />
         </body>
       </html>
     </ClerkProvider>
